@@ -1,0 +1,23 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": ":sunny: weather api wrapper for synapse",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioMediaLab/weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BioMediaLab/weather/issues"
+  },
+  "homepage": "https://github.com/BioMediaLab/weather#readme",
+  "dependencies": {
+    "micro": "^6.1.0"
+  }
+}
