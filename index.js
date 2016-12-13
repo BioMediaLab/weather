@@ -26,6 +26,10 @@ function getWeather(location) {
 
 module.exports = async function (req, res) {
   const query = qs.parse(url.parse(req.url).query);
-  const weather = await getWeather(query.location);
+  try {
+    const weather = await getWeather(query.location);
+  } catch (error) {
+    send(res, 500);
+  }
   return weather;
 }
