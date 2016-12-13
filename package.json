@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/BioMediaLab/weather#readme",
   "dependencies": {
-    "micro": "^6.1.0"
+    "micro": "^6.1.0",
+    "querystring": "^0.2.0",
+    "url": "^0.11.0"
   }
 }
