@@ -13,7 +13,8 @@ function getWeather(location) {
         uri: 'http://api.openweathermap.org/data/2.5/weather?q=' + location +',US&APPID=d5ffb9a0c0f2f58afaec4824ebd295d8',
       },
       function (error, response, body) {
-        if (error){
+        if (error) {
+          reject(error);
         }
         if (!error && response.statusCode == 200) {
           resolve(body);
